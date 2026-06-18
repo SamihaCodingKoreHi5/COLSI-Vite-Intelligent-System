@@ -34,7 +34,7 @@ COLSI is engineered for performance and scalability, leveraging a modern technol
 
 1.  **Clone the Repository**:
     ```bash
-    git clone https://github.com/imamdoula004/COLSI-Vite-Intelligent-System.git
+    git clone https://github.com/SamihaCodingKoreHi5/satellite-health-monitor.git
     cd colsi-vite
     ```
 

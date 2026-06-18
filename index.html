@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COLSI | Intelligence Platform</title>
+    <meta name="description" content="Cost of Living Stress Intelligence: Multimodal stress aggregation cross-referenced with regional economic vectors." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://colsi.int/" />
+    <meta property="og:title" content="COLSI | Intelligence HUD" />
+    <meta property="og:description" content="Strategic synthesis of current economic friction vectors and predictive cost forecasting." />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://colsi.int/" />
+    <meta property="twitter:title" content="COLSI | Intelligence HUD" />
+    <meta property="twitter:description" content="Strategic synthesis of current economic friction vectors and predictive cost forecasting." />
+    <meta property="twitter:image" content="/og-image.png" />
+    <script>
+      window.onerror = function(msg, url, lineNo, columnNo, error) {
+        var debugDiv = document.createElement('div');
+        debugDiv.style.position = 'fixed';
+        debugDiv.style.top = '0';
+        debugDiv.style.left = '0';
+        debugDiv.style.width = '100%';
+        debugDiv.style.height = '100%';
+        debugDiv.style.backgroundColor = '#ef4444';
+        debugDiv.style.color = 'white';
+        debugDiv.style.padding = '40px';
+        debugDiv.style.zIndex = '1000000';
+        debugDiv.style.fontFamily = 'monospace';
+        debugDiv.style.fontSize = '16px';
+        debugDiv.style.overflow = 'auto';
+        
+        debugDiv.innerHTML = '<h1>🚫 Runtime Error</h1>' +
+          '<p><b>Message:</b> ' + msg + '</p>' +
+          '<p><b>Url:</b> ' + url + '</p>' +
+          '<p><b>Line:</b> ' + lineNo + ' <b>Column:</b> ' + columnNo + '</p>' +
+          '<pre>' + (error ? error.stack : 'No stack trace') + '</pre>';
+          
+        document.body.appendChild(debugDiv);
+        return false;
+      };
+      console.log('Diagnostic Overlay Active');
+    </script>
+  </head>
+  <body style="background: #020617;">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
